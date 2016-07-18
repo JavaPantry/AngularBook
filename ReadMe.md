@@ -11,8 +11,8 @@ y:\Udemy\Angular2\01 Course Introduction\006 Setting up the Development Environm
 
 ## 010 First Project - Puzzle App Part 2.mp4
 
-- Use ![ngClass.PNG](ngClass.PNG)
-- Instead ![noNgClass.PNG](noNgClass.PNG)
+- Use ![ngClass.PNG](.\udemyAngular2images\ngClass.PNG)
+- Instead ![noNgClass.PNG](.\udemyAngular2images\noNgClass.PNG)
 
 # completed
 y:\Udemy\Angular2\02 Components  Templates\
