@@ -1,7 +1,11 @@
 <p>
   <span *ngFor="#star of stars"
-        class="starrating glyphicon glyphicon-star"
-        [class.glyphicon-star-empty]="star">
+        class="starrating glyphicon glyphicon-star" [class.glyphicon-star-empty]="star"  >
+        <!--
+        stars[] filled with boolean calculated as 'i>rating' means equal true for i value greater than product rating
+        If an 'star' expression within the double quotes on the right evaluates to true, the
+        glyphicon-star-empty CSS class will be added to the class attribute of the span element 'means overshadow filled star'.
+        -->
   </span>
   <span>{{ rating }} stars</span>
 </p>
