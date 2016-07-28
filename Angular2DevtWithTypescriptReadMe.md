@@ -86,3 +86,39 @@ with all browsers even with the old ones.
 - PathLocationStrategy - a History API based strategy that is supported only in the
 browsers that support HTML5. This is a default location strategy in Angular.
 
+# 8. Interacting with Servers Using HTTP and Websockets
+
+- errors to run server
+- errors to run compiler `npm tsc`
+- install compiler
+ 
+### B.3.1 Installing and Using TypeScript Compiler
+
+- npm install -g typescript
+- tsc --version
+- start server from cmd line `npm start`
+
+`
+    C:\WebStormWS\angular2typescript-master\chapter8\auction>tsc --v
+    Version 1.8.10
+    C:\WebStormWS\angular2typescript-master\chapter8\auction>tsc -w
+    server/model.ts(41,19): error TS2339: Property 'find' does not exist on type '{ "id": number; "title": string; "price": number; "r
+    ating": number; "description": string; "categ...'.
+    server/auction.ts(1,26): error TS2307: Cannot find module 'express'.
+    server/auction.ts(2,23): error TS2307: Cannot find module 'path'.
+    server/auction.ts(3,36): error TS2307: Cannot find module 'http'.
+    server/auction.ts(4,34): error TS2307: Cannot find module 'ws'.
+    server/auction.ts(11,51): error TS2304: Cannot find name '__dirname'.
+    server/auction.ts(12,51): error TS2304: Cannot find name '__dirname'.
+    server/auction.ts(50,27): error TS2304: Cannot find name 'Map'.
+    server/auction.ts(59,25): error TS2304: Cannot find name 'Map'.
+    10:14:30 AM - Compilation complete. Watching for file changes.
+    ^CTerminate batch job (Y/N)? y
+    C:\WebStormWS\angular2typescript-master\chapter8\auction>npm start
+    > auction_ch8@ start C:\WebStormWS\angular2typescript-master\chapter8\auction
+    > node build/auction.js
+    Listening on 127.0.0.1 8000
+`
+
+
+- goto http://localhost:8000/#/products/3
